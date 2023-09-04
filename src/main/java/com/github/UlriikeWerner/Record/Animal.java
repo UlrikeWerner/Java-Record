@@ -3,7 +3,7 @@ package com.github.UlriikeWerner.Record;
 public record Animal(
         int ID,
         String name,
-        String species,
+        Species species,
         int age,
         Owner owner
 ) {
