@@ -1,5 +1,7 @@
 package com.github.UlriikeWerner.Record;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Species felidae = new Species("Felidae", 100);
@@ -15,5 +17,9 @@ public class Main {
         Animal copyFlash = flash.withName("Fluffy");
         System.out.println(copyFlash);
 
+        System.out.println("-------------------");
+        Zoo zoo = new Zoo(List.of(muffin, arya, flash));
+        System.out.println(zoo);
+        System.out.println(zoo.calculateTotalFeedRequirement());
     }
 }
