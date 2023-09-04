@@ -11,5 +11,9 @@ public class Main {
         System.out.println(flash.ID() + ", " + flash.age() + ", " + flash.owner().fullName() + ", " + flash.species().species());
         System.out.println(muffin.equals(arya));
 
+        System.out.println("-------------------");
+        Animal copyFlash = flash.withName("Fluffy");
+        System.out.println(copyFlash);
+
     }
 }
